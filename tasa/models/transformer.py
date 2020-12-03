@@ -5,10 +5,6 @@ import torch.nn.functional as F
 from tasa.modules import TransformerBlock
 from tasa.utils import d
 
-__all__ = [
-    "TATransformer",
-]
-
 
 class TATransformer(nn.Module):
     """Time-Aware Transformer"""
@@ -22,15 +18,18 @@ class TATransformer(nn.Module):
                  wide: bool = False):
         super().__init__()
 
+        # actions embedding + temporal encoding
         self.n_actions = n_actions
         self.actions_embedding = nn.Embedding(embedding_dim=emb, num_embeddings=n_actions)
         self.temporal_encoding = nn.Embedding(embedding_dim=emb, num_embeddings=n_actions)
 
+        # transform
         self.tblocks = nn.Sequential(
             TransformerBlock(emb=emb, heads=heads, eq_length=trail_len, wide=wide, mask=True)
             for i in range(depth)
         )
 
+        # softmax
         self.toprobs = nn.Linear(emb, n_actions)
 
     def forward(self, x):
