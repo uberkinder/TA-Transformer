@@ -38,7 +38,7 @@ class TATransformer(nn.Module):
         -----------
         x: A (batch, sequence length) integer tensor of token indices.
 
-        Retruns:
+        Returns:
         --------
         x: predicted log-probability vectors for each token based on the preceding tokens.
 
