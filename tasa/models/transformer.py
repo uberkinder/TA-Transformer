@@ -12,7 +12,7 @@ class TATransformer(nn.Module):
     def __init__(self,
                  emb: int, 
                  heads: int,
-                 depth: int, 
+                 depth: int,
                  trail_len: int, 
                  n_actions: int,
                  wide: bool = False):
