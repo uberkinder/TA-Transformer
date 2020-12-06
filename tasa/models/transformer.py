@@ -7,7 +7,7 @@ from tasa.utils import d
 
 
 class TATransformer(nn.Module):
-    """Time-Aware Transformer 2"""
+    """Time-Aware Transformer"""
 
     def __init__(self,
                  emb: int, 
