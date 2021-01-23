@@ -26,7 +26,7 @@ class TATransformer(nn.Module):
         # transform
         self.tblocks = nn.Sequential(
             TransformerBlock(emb=emb, heads=heads, eq_length=trail_len, wide=wide, mask=True)
-            for i in range(depth)
+            for _ in range(depth)
         )
 
         # softmax

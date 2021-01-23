@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="vasi.ai-test" deleteMissingItems="true" uploadOnCheckin="6ef698ea-f1d6-40d8-8e93-a795026480ed" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="vasi.ai-test">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$USER_HOME$/kaggle/2002/vastai_test" web="/root" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="vasi.ai-test" />
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

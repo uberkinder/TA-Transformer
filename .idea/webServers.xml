@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6ef698ea-f1d6-40d8-8e93-a795026480ed" name="vasi.ai-test" url="http://vastai">
+        <fileTransfer accessType="SFTP" host="vastai" port="14038" sshConfigId="cfec061a-3fee-473f-820e-47c21914be95" sshConfig="vast.ai (SSH)" authAgent="true" />
+      </webServer>
+      <webServer id="352c9a9a-03ff-4275-9bb2-a5317421c0bc" name="vastai" url="http://vastai">
+        <fileTransfer accessType="SFTP" host="vastai" port="14038" sshConfigId="cfec061a-3fee-473f-820e-47c21914be95" sshConfig="vast.ai (SSH)" authAgent="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
